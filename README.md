@@ -22,7 +22,7 @@ Next, clone our repo and install the required packages:
 ```
 
 ## Getting Started
-We release three CogACT models with different model sizes, including [Small](https://huggingface.co/CogACT/CogACT-Small), [Base](https://huggingface.co/CogACT/CogACT-Base) and [Large](https://huggingface.co/CogACT/CogACT-Large). Checkpoints, configs, and model cards are availabel on [Hugging Face page](https://huggingface.co/CogACT). Refer to the code below for the minimal inference:
+There are three CogACT models with different model sizes, including [Small](https://huggingface.co/CogACT/CogACT-Small), [Base](https://huggingface.co/CogACT/CogACT-Base) and [Large](https://huggingface.co/CogACT/CogACT-Large). Checkpoints, configs, and model cards are availabel on [Hugging Face page](https://huggingface.co/CogACT). Refer to the code below for the minimal inference:
 
     from PIL import Image
     from vla import load_vla
@@ -55,7 +55,7 @@ We release three CogACT models with different model sizes, including [Small](htt
 
     # results in 7-DoF actions of 16 steps with shape [16, 7]
 
-Alternatively, you can use batch inference function ``predict_action_batch`` from [vla/cogactvla.py](./vla/cogactvla.py) to accelerate inference in the simulator. For our ``Adaptive Action Ensemble`` strategy, please refer to [adaptive_ensemble.py](./evaluation/adaptive_ensemble.py).
+Alternatively, you can use batch inference function ``predict_action_batch`` from [vla/cogactvla.py](./vla/cogactvla.py) to accelerate inference in the simulator.
 
 
 ## Quickly train model:
