@@ -39,7 +39,7 @@ export MSE=${mse_weight}
 export BALANCE=${balance_weight}
 export KD=${KD_weight}
 
-SETTING=${SETTING} COG_RES=${cog_res} RANDOM_SEED=${seed} USE_INDEX=${use_index} FOR_ROUTE=${route_in_for} TRAIN_ROUTE=False ADD_LSTM=${add_lstm} SKIP_LAYER_NUMBER=$skip_layer_number CUDA_VISIBLE_DEVICES=$device torchrun --standalone --nnodes 1 --nproc-per-node 8 scripts/train.py \
+SETTING=${SETTING} COG_RES=${cog_res} RANDOM_SEED=${seed} USE_INDEX=${use_index} FOR_ROUTE=${route_in_for} TRAIN_ROUTE=True ADD_LSTM=${add_lstm} SKIP_LAYER_NUMBER=$skip_layer_number CUDA_VISIBLE_DEVICES=$device torchrun --standalone --nnodes 1 --nproc-per-node 8 scripts/train.py \
   --vla.type prism-dinosiglip-224px+oxe+diffusion \
   --vla.data_mix rlbench \
   --vla.expected_world_size 8 \
