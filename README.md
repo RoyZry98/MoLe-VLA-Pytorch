@@ -18,6 +18,7 @@ Next, clone our repo and install the required packages:
 ```
     git clone https://github.com/RoyZry98/MoLe-VLA.git
     cd MoLE_VLA
+    conda env create -f environment.yml
 ```
 
 ## Getting Started
@@ -60,7 +61,6 @@ Alternatively, you can use batch inference function ``predict_action_batch`` fro
 ## Quickly train model:
 ```bash
 cd /path/to/MoLE_VLA
-conda env create -f environment.yml
 bash train_multi_task10_mix.sh 14 0.5 0.1 0.5 32 0.999 0,1,2,3,4,5,6,7
 ```
 ## Download checkpoint (30 GB)
