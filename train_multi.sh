@@ -27,7 +27,6 @@ device=$7
 # device='4'  
 
 current_dir=$(pwd)
-# 提取路径的第二部分并构造 ckpt_root
 second_dir=$(echo "$current_dir" | cut -d"/" -f2)
 export PATH=$PATH:/$second_dir/dmh/Cogact_test
 export PYTHONPATH=$PYTHONPATH:/$second_dir/dmh/Cogact_test  # CogAct official model
