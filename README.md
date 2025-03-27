@@ -22,7 +22,7 @@ Next, clone our repo and install the required packages:
 ```
 
 ## Getting Started
-There are three CogACT models with different model sizes, including [Small](https://huggingface.co/CogACT/CogACT-Small), [Base](https://huggingface.co/CogACT/CogACT-Base) and [Large](https://huggingface.co/CogACT/CogACT-Large). Checkpoints, configs, and model cards are availabel on [Hugging Face page](https://huggingface.co/CogACT). Refer to the code below for the minimal inference:
+The backbone model CogACT including checkpoints, configs, and model cards, are available on [Hugging Face page](https://huggingface.co/CogACT). Refer to the code below for the minimal inference:
 
     from PIL import Image
     from vla import load_vla
@@ -63,5 +63,3 @@ Alternatively, you can use batch inference function ``predict_action_batch`` fro
 cd /path/to/MoLE_VLA
 bash train_multi_task10_mix.sh 14 0.5 0.1 0.5 32 0.999 0,1,2,3,4,5,6,7
 ```
-## Download checkpoint (30 GB)
-    git clone https://huggingface.co/CogACT/CogACT-Base
