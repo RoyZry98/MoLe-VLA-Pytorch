@@ -5,7 +5,6 @@
 
 <img src="mole.png"/>
 
-This is the code for MoLE_VLA.
 
 ## Installation
 The code is built using Python 3.10, and can be run under any environment with Python 3.8 and above. We require PyTorch >= 2.2.0 and CUDA >= 12.0 (It may run with lower versions, but we have not tested it).
@@ -22,7 +21,7 @@ Next, clone our repo and install the required packages:
 ```
 
 ## Getting Started
-The backbone model CogACT including checkpoints, configs, and model cards, are available on [Hugging Face page](https://huggingface.co/CogACT). Refer to the code below for the minimal inference:
+The backbone model CogACT, which includes checkpoints, configs, and model cards, is available on [Hugging Face page](https://huggingface.co/CogACT). Refer to the code below for the minimal inference:
 
     from PIL import Image
     from vla import load_vla
