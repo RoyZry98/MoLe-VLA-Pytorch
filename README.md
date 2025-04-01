@@ -56,6 +56,17 @@ The backbone model CogACT, which includes checkpoints, configs, and model cards,
 
 Alternatively, you can use batch inference function ``predict_action_batch`` from [vla/cogactvla.py](./vla/cogactvla.py) to accelerate inference in the simulator.
 
+## Citation
+Please cite our work if you find it useful.
+```bibtex
+@article{zhang2025mole,
+  title={MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation},
+  author={Zhang, Rongyu and Dong, Menghang and Zhang, Yuan and Heng, Liang and Chi, Xiaowei and Dai, Gaole and Du, Li and Wang, Dan and Du, Yuan and Zhang, Shanghang},
+  journal={arXiv preprint arXiv:2503.20384},
+  year={2025}
+}
+```
+
 
 ## Quickly train model:
 ```bash
