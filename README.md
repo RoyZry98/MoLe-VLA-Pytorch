@@ -20,6 +20,8 @@ Next, clone our repo and install the required packages:
     conda env create -f environment.yml
 ```
 
+You may refer to [LIFT3D-CVPR2025](https://github.com/PKU-HMI-Lab/LIFT3D?tab=readme-ov-file) to generate the datasets from RLBench.
+
 ## Getting Started
 The backbone model CogACT, which includes checkpoints, configs, and model cards, is available on [Hugging Face page](https://huggingface.co/CogACT). Refer to the code below for the minimal inference:
 
